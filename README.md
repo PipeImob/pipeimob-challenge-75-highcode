@@ -125,25 +125,26 @@ Construir uma **Central de Enquetes** fullstack com integração ao Bubble.
 
 ## Parte 2: Integração Bubble (complementar)
 
-Demonstrar capacidade de integrar com Bubble criando:
+Demonstrar capacidade de integrar Bubble com um backend highcode, criando uma **página visual funcional** no Bubble que consome a API do seu backend.
 
-### 1. Backend Workflow POST
+### 1. Página de Enquetes no Bubble
 
-- Criar um **Backend Workflow no Bubble** que recebe dados de uma nova enquete via POST (título, opções) e cria o registro no banco do Bubble
-- O candidato deve chamar esse endpoint a partir do app highcode ou via Postman/curl para demonstrar
+Criar uma página no Bubble que permita interagir com o sistema de enquetes do backend highcode:
 
-### 2. Backend Workflow GET
+- **Formulário de criação de enquete**: campos de título e opções, que ao clicar em "Criar" chama o endpoint `POST /api/v1/polls` do backend via **API Connector**
+- **Listagem de enquetes**: exibir as enquetes retornadas pelo `GET /api/v1/polls` do backend, usando **Repeating Group**
+- **Votação**: botão para votar em uma opção que chama o endpoint `POST /api/v1/polls/{id}/vote` do backend
 
-- Criar um **Backend Workflow no Bubble** que retorna dados de enquetes do Bubble em formato JSON
-- Demonstrar a chamada a esse endpoint
+### 2. API Connector
 
-### 3. Modelagem no Bubble
+- Configurar o **API Connector** no Bubble para se comunicar com o backend highcode
+- Configurar autenticação (enviar token JWT nos headers)
+- Pelo menos 3 chamadas configuradas: criar enquete, listar enquetes, votar
 
-- Criar a tabela de enquetes no Bubble com modelagem correta (tipos de campo, relações)
+### 3. Backend Workflow
 
-### 4. API Connector
-
-- Configurar o **API Connector** no Bubble para chamar pelo menos um endpoint do seu backend highcode
+- Criar um **Backend Workflow (API Workflow)** no Bubble que expõe um endpoint GET retornando dados de uma enquete em formato JSON
+- Demonstrar a chamada a esse endpoint via Postman/curl
 
 ## Padrões Esperados
 
