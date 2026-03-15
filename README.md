@@ -78,8 +78,8 @@ Construir uma **Central de Enquetes** fullstack com integração ao Bubble.
 
 ### 2. API Design
 
-- CRUD completo de enquetes (POST, GET, PUT, DELETE `/api/polls`)
-- Endpoint de votação com validação (`POST /api/polls/{id}/vote`)
+- CRUD completo de enquetes (POST, GET, PUT, DELETE `/api/v1/polls`)
+- Endpoint de votação com validação (`POST /api/v1/polls/{id}/vote`)
 - Pydantic models para request/response
 - Status codes corretos + formato de erro consistente
 
