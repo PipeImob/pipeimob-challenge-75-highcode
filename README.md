@@ -19,7 +19,7 @@ A Pipeimob é uma plataforma de gestão imobiliária em migração de Bubble par
 
 ## Starter Repo
 
-Você receberá um repositório base, baseado no template interno da Pipeimob. Fork e desenvolva a partir dele.
+Você receberá um repositório base, baseado no template interno da Pipeimob. Clique em **"Use this template"** no GitHub para criar uma cópia privada no seu perfil e desenvolva a partir dela.
 
 A estrutura segue o padrão de organização da Pipeimob: controllers em `api/v1/routes/`, lógica de negócio em `services/`, validação em `schemas/` e utilitários em `utils/`.
 
@@ -161,7 +161,7 @@ Demonstrar capacidade de integrar com Bubble criando:
 
 ## Entrega
 
-1. **Fork** do starter repo com código
+1. **Repositório privado** criado a partir do template, com o usuário **ricardopipeimob** adicionado como collaborator
 2. **URL pública** do app deployado
 3. **Link do app Bubble** (editor + app)
 4. **NOTES.md** documentando:
